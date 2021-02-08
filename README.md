@@ -3,12 +3,14 @@
 參考https://blog.csdn.net/weixin_43390800/article/details/109838293 先安裝 mmdetection
 安裝mmdetection 參考https://zhuanlan.zhihu.com/p/159912450
 其中mmdetection並未修改程式碼直接安裝mmdetection
-
+<br>
+<br>
 問題
 >UserWarning: Error checking compiler version for cl
 
 cmd輸入cl
 >'cl' 不是內部或外部命令、可執行的程式或批次檔
+<br>
 <br>
 <br>
 解決方式
@@ -19,6 +21,7 @@ cl為VS內的東西 找到VS安裝路徑C:\Program Files (x86)\Microsoft Visual 
 >C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64
 
 將此路徑加入環境變量path中
+<br>
 <br>
 <br>
 問題
@@ -35,12 +38,14 @@ cl為VS內的東西 找到VS安裝路徑C:\Program Files (x86)\Microsoft Visual 
 >cmake -Bbuild-cmake -H.
 
 皆失敗
-
+<br>
+<br>
 使用
 >cmake --build build-cmake
 
 安裝成功
 至cmd輸入 ninja有成功顯示
+<br>
 <br>
 <br>
 問題
