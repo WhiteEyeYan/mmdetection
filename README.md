@@ -65,3 +65,12 @@ cl為VS內的東西 找到VS安裝路徑C:\Program Files (x86)\Microsoft Visual 
 
 改為
 >command = ['ninja', '--version']
+<br>
+<br>
+<br>
+問題
+>LINK : fatal error LNK1181: 無法開啟輸入檔 'cudart.lib'
+
+
+
+
