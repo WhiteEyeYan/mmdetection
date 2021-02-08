@@ -83,3 +83,7 @@ https://wiki.hackzine.org/development/python/library-in-custom-path.html
 更改為cuda_runtime_api.h所在的路徑
 >#include <C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_runtime_api.h>
  -I C:/"Program Files"/"NVIDIA GPU Computing Toolkit"/CUDA/v10.1/include --library-dirs C:/"Program Files"/"NVIDIA GPU Computing Toolkit"/CUDA/v10.1/lib/x64
+ 
+ 問題
+>LINK : error LNK2001: 無法解析的外部符號 PyInit_compiling_info
+>build\temp.win-amd64-3.7\Release\mmdet\ops\utils\src\compiling_info.cp37-win_amd64.lib : fatal error LNK1120: 1 個無法解析的外部符號
