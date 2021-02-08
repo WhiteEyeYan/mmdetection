@@ -74,3 +74,12 @@ cl為VS內的東西 找到VS安裝路徑C:\Program Files (x86)\Microsoft Visual 
 https://wiki.hackzine.org/development/python/library-in-custom-path.html
 
 
+問題
+>fatal error C1083: 無法開啟包含檔案: 'cuda_runtime_api.h': No such file or directory
+
+開啟mmdet\ops\utils\src\compiling_info.cpp 
+>#include <cuda_runtime_api.h>
+
+更改為cuda_runtime_api.h所在的路徑
+>#include <C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_runtime_api.h>
+ -I C:/"Program Files"/"NVIDIA GPU Computing Toolkit"/CUDA/v10.1/include --library-dirs C:/"Program Files"/"NVIDIA GPU Computing Toolkit"/CUDA/v10.1/lib/x64
