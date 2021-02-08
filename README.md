@@ -9,8 +9,8 @@
 
 cmd輸入cl
 >'cl' 不是內部或外部命令、可執行的程式或批次檔
-  
-  
+<br>
+<br>
 解決方式
 
 cl為VS內的東西 找到VS安裝路徑C:\Program Files (x86)\Microsoft Visual Studio\2017\Community
@@ -19,14 +19,14 @@ cl為VS內的東西 找到VS安裝路徑C:\Program Files (x86)\Microsoft Visual 
 >C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64
 
 將此路徑加入環境變量path中
-  
-  
+<br>
+<br>
 問題
 >subprocess.CalledProcessError: Command '['ninja', '-v']' returned non-zero exit status 1.
 
 後來發現我還沒安裝ninja
-
-
+    
+    
 至ninja github下載 https://github.com/ninja-build/ninja
 解壓縮後cd至ninja-master目錄下
 使用
@@ -41,8 +41,8 @@ cl為VS內的東西 找到VS安裝路徑C:\Program Files (x86)\Microsoft Visual 
 
 安裝成功
 至cmd輸入 ninja有成功顯示
-  
-  
+<br>
+<br>
 問題
 >subprocess.CalledProcessError: Command '['ninja', '-v']' returned non-zero exit status 1.
 
