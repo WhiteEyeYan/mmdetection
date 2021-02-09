@@ -1,5 +1,6 @@
-# mmskeleton
+# mmdetection
 
+為了安裝mmskeleton
 參考https://blog.csdn.net/weixin_43390800/article/details/109838293 先安裝 mmdetection
 安裝mmdetection 參考https://zhuanlan.zhihu.com/p/159912450
 其中mmdetection並未修改程式碼直接安裝mmdetection
