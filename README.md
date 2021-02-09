@@ -95,3 +95,10 @@ https://wiki.hackzine.org/development/python/library-in-custom-path.html
 
 更改為cuda_runtime_api.h所在的路徑
 >#include <C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_runtime_api.h>
+
+
+問題
+>No CUDA runtime is found
+
+明明就有安裝CUDA也有搜尋到路徑 不知道為甚麼會這樣
+後來重裝torch 用pytorch官網的pip指令下載後正常
