@@ -102,3 +102,13 @@ https://wiki.hackzine.org/development/python/library-in-custom-path.html
 
 明明就有安裝CUDA也有搜尋到路徑 不知道為甚麼會這樣
 後來重裝torch 用pytorch官網的pip指令下載後正常
+
+問題
+>KeyError: 'ConvWS is already registered in conv layer'
+
+參考https://blog.csdn.net/weixin_40755306/article/details/113666002
+至D:\WhiteEyeYan\Desktop\mmdetection-2.1.0\mmdet\ops\conv_ws.py
+>@CONV_LAYERS.register_module('ConvWS')
+
+改為
+>@CONV_LAYERS.register_module(name='ConvWS', force=True)
