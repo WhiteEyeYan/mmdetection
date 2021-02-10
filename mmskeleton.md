@@ -11,3 +11,16 @@
 
 參考
 https://www.codenong.com/cs106400215/
+
+
+>AttributeError: module 'pycocotools' has no attribute '__version__'
+
+解決方式
+>pip install mmpycocotools
+
+若無解決 則重裝
+>pip uninstall mmpycocotools
+>pip install mmpycocotools
+
+
+>TypeError: __init__() got an unexpected keyword argument 'num_stages'
