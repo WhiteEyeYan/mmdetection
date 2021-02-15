@@ -126,5 +126,10 @@ https://wiki.hackzine.org/development/python/library-in-custom-path.html
 
 
 >AttributeError: module 'pycocotools' has no attribute '__version__'
+
 >pip uninstall pycocotools
 >pip install mmpycocotools
+
+
+>ImportError: DLL load failed: 找不到指定的程序。
+可能是沒安裝cudnn
