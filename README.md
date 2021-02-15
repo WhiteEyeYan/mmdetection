@@ -122,3 +122,9 @@ https://wiki.hackzine.org/development/python/library-in-custom-path.html
 
 改為
 >@CONV_LAYERS.register_module(name='ConvWS', force=True)
+
+
+
+>AttributeError: module 'pycocotools' has no attribute '__version__'
+>pip uninstall pycocotools
+>pip install mmpycocotools
