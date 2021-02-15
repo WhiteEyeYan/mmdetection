@@ -131,5 +131,3 @@ https://wiki.hackzine.org/development/python/library-in-custom-path.html
 >pip install mmpycocotools
 
 
->ImportError: DLL load failed: 找不到指定的程序。
-可能是沒安裝cudnn
