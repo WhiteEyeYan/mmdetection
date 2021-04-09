@@ -4,8 +4,8 @@
 參考https://blog.csdn.net/weixin_43390800/article/details/109838293 先安裝 mmdetection
 安裝mmdetection 參考https://zhuanlan.zhihu.com/p/159912450
 其中mmdetection並未修改程式碼直接安裝mmdetection
-<br>
-<br>
+<br />
+<br />
 在conda環境下建構失敗 一直找不到的.lib 在一般cmd下使用
 >pip install -v -e .
 
@@ -14,16 +14,16 @@
 >python setup.py develop
 
 成功~
-<br>
-<br>
+<br />
+<br />
 問題
 >UserWarning: Error checking compiler version for cl
 
 cmd輸入cl
 >'cl' 不是內部或外部命令、可執行的程式或批次檔
-<br>
-<br>
-<br>
+<br />
+<br />
+<br />
 解決方式
 
 cl為VS內的東西 找到VS安裝路徑C:\Program Files (x86)\Microsoft Visual Studio\2017\Community
@@ -32,9 +32,9 @@ cl為VS內的東西 找到VS安裝路徑C:\Program Files (x86)\Microsoft Visual 
 >C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64
 
 將此路徑加入環境變量path中
-<br>
-<br>
-<br>
+<br />
+<br />
+<br />
 問題
 >subprocess.CalledProcessError: Command '['ninja', '-v']' returned non-zero exit status 1.
 
@@ -49,16 +49,16 @@ cl為VS內的東西 找到VS安裝路徑C:\Program Files (x86)\Microsoft Visual 
 >cmake -Bbuild-cmake -H.
 
 皆失敗
-<br>
-<br>
+<br />
+<br />
 使用
 >cmake --build build-cmake
 
 安裝成功
 至cmd輸入 ninja有成功顯示
-<br>
-<br>
-<br>
+<br />
+<br />
+<br />
 問題
 >subprocess.CalledProcessError: Command '['ninja', '-v']' returned non-zero exit status 1.
 
@@ -76,13 +76,13 @@ cl為VS內的東西 找到VS安裝路徑C:\Program Files (x86)\Microsoft Visual 
 
 改為
 >command = ['ninja', '--version']
-<br>
-<br>
-<br>
+<br />
+<br />
+<br />
 
-問題
-
->LINK : fatal error LNK1181: 無法開啟輸入檔 'cudart.lib'
+問題  
+>LINK : fatal error LNK1181: 無法開啟輸入檔 'cudart.lib'  
+![img](https://github.com/WhiteEyeYan/mmdetection/blob/main/README_img/error1.jpg)
 
 先執行一次
 >python stepup.py build_ext --library-dirs C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.0/lib/x64
@@ -97,8 +97,9 @@ cl為VS內的東西 找到VS安裝路徑C:\Program Files (x86)\Microsoft Visual 
 https://wiki.hackzine.org/development/python/library-in-custom-path.html
 
 
-問題
->fatal error C1083: 無法開啟包含檔案: 'cuda_runtime_api.h': No such file or directory
+問題  
+>fatal error C1083: 無法開啟包含檔案: 'cuda_runtime_api.h': No such file or directory  
+![img](https://github.com/WhiteEyeYan/mmdetection/blob/main/README_img/error2.jpg)
 
 開啟mmdet\ops\utils\src\compiling_info.cpp 
 >#include <cuda_runtime_api.h>
@@ -113,8 +114,9 @@ https://wiki.hackzine.org/development/python/library-in-custom-path.html
 明明就有安裝CUDA也有搜尋到路徑 不知道為甚麼會這樣
 後來重裝torch 用pytorch官網的pip指令下載後正常
 
-問題
->KeyError: 'ConvWS is already registered in conv layer'
+問題  
+>KeyError: 'ConvWS is already registered in conv layer'  
+![img](https://github.com/WhiteEyeYan/mmdetection/blob/main/README_img/error3.jpg)  
 
 參考https://blog.csdn.net/weixin_40755306/article/details/113666002
 至D:\WhiteEyeYan\Desktop\mmdetection-2.1.0\mmdet\ops\conv_ws.py
